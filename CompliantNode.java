@@ -3,20 +3,19 @@ import java.util.Set;
 
 /* CompliantNode refers to a node that follows the rules (not malicious)*/
 public class CompliantNode implements Node {
+    private boolean[] followees;
+    private Set<Transaction> pendingTransactions;
 
     public CompliantNode(double p_graph, double p_malicious, double p_txDistribution, int numRounds) {
         // IMPLEMENT THIS
     }
 
     public void setFollowees(boolean[] followees) {
-        private boolean[] followees;
-        public void setFollowees(boolean[]followees) {
-            this.followees= followees;
-        }
+        this.followees= followees;
     }
 
     public void setPendingTransaction(Set<Transaction> pendingTransactions) {
-        // IMPLEMENT THIS
+        this.pendingTransactions = pendingTransactions;
     }
 
     public Set<Transaction> getProposals() {
