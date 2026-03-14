@@ -8,6 +8,7 @@ public class CompliantNode implements Node {
 
     public CompliantNode(double p_graph, double p_malicious, double p_txDistribution, int numRounds) {
         // IMPLEMENT THIS
+        //since its a constructor we dont need to implement anything, we can just remove the comment, unless we want to store them up to yall
     }
 
     public void setFollowees(boolean[] followees) {
