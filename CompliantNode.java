@@ -9,7 +9,10 @@ public class CompliantNode implements Node {
     }
 
     public void setFollowees(boolean[] followees) {
-        // IMPLEMENT THIS
+        private boolean[] followees;
+        public void setFollowees(boolean[]followees) {
+            this.followees= followees;
+        }
     }
 
     public void setPendingTransaction(Set<Transaction> pendingTransactions) {
